@@ -1,0 +1,1784 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Grammar Friends 1 • ADAM ENGLISH</title><style>
+:root{--ink:#15334b;--paper:#fff;--bg:#eef3f6;--accent:#007e87;--font:20px}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font-family:Arial,Helvetica,sans-serif;line-height:1.55}button,select,input{font:inherit;color:inherit}button,select{border:1px solid #c9d8df;border-radius:9px;background:var(--paper);padding:9px 12px;cursor:pointer}button:hover{border-color:var(--accent)}header{position:sticky;top:0;z-index:20;background:var(--paper);box-shadow:0 2px 10px #1232;padding:10px 20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}header strong{margin-right:auto;letter-spacing:1px;color:var(--accent)}#pick{max-width:300px}#read{max-width:980px;margin:auto;padding:28px 20px 80px;font-size:var(--font)}.intro{padding:30px 0}.intro h1{font-size:2em;line-height:1.2}.intro small,.kicker{color:var(--accent);font-weight:bold;letter-spacing:1px}article{background:var(--paper);padding:30px;border-radius:16px;margin:22px 0;box-shadow:0 4px 18px #15334b08;scroll-margin-top:145px}article h2{font-size:1.6em;line-height:1.25;margin:10px 0}article h3{margin-top:32px;color:var(--accent);font-size:1.17em}p{margin:12px 0}.example{background:#eaf6f5;border-left:4px solid var(--accent);padding:12px 16px;color:#15334b}.formula{font-weight:bold}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.91em;line-height:1.4;margin:15px 0}th,td{text-align:left;border:1px solid #ccdae1;padding:9px 12px;vertical-align:top;overflow-wrap:anywhere}th{background:#e8f0f4}.source{font-size:.8em;color:#617581}#stage{display:none;position:fixed;inset:76px 0 65px;align-items:center;justify-content:center;overflow:hidden}#slide{width:1920px;height:1080px;flex-shrink:0;transform-origin:center;background:var(--paper);padding:70px 100px;position:absolute;box-shadow:0 4px 30px #0002;font-size:44px;line-height:1.4}#slide h2{font-size:72px;line-height:1.15;margin:20px 0 30px}#slide .kicker{font-size:30px}#slide .source{position:absolute;bottom:30px;left:100px;font-size:25px}#slide .example{font-size:48px;margin:18px 0;padding:15px 25px}#slide .formula{font-size:42px}#slide table{font-size:38px}#slide th,#slide td{padding:12px 20px}#slideContent{max-height:790px}#nav{display:none;position:fixed;bottom:0;left:0;right:0;z-index:20;justify-content:center;gap:18px;align-items:center;background:var(--paper);padding:10px}.slides{overflow:hidden}.slides #read{display:none}.slides #stage,.slides #nav{display:flex}.slides .fontctl{display:none}#menu{position:fixed;z-index:40;inset:0;background:#0006;display:none}#menu.open{display:block}#panel{width:min(480px,94vw);height:100%;background:var(--paper);padding:20px;overflow-y:auto}#panel input{width:100%;padding:12px;margin:12px 0;border:1px solid #c9d8df;border-radius:8px}#links button{display:block;width:100%;text-align:left;margin:7px 0}#black{display:none;position:fixed;inset:0;background:black;z-index:99}body.dark{--ink:#eaf1f5;--paper:#172e3f;--bg:#0b1d2a;--accent:#7cdfd4}.dark th{background:#244455}.dark .source{color:#b8cad3}.dark .example{background:#244455;color:#eaf1f5}.dark th,.dark td{border-color:#466270}@media(max-width:650px){header{padding:8px;gap:6px;font-size:14px}header strong{width:100%;font-size:14px}#pick{max-width:145px;flex:1}button,select{padding:8px}#read{padding:12px 12px 50px}article{padding:20px 16px;margin:16px 0}article h2{font-size:1.4em}.intro{padding:20px 4px}.intro h1{font-size:1.65em}td,th{padding:8px 6px}#full,#theme{display:none}}
+</style><header id="toolbar"><strong>ADAM ENGLISH</strong><button id="toc">Mục lục</button><select id="pick" aria-label="Chọn bài"></select><button id="mode">Chế độ Slide</button><button class="fontctl" id="minus" aria-label="Giảm cỡ chữ">A−</button><button class="fontctl" id="plus" aria-label="Tăng cỡ chữ">A+</button><button id="full">Toàn màn hình</button><button id="theme">Sáng / tối</button></header><main id="read"><div class="intro"><small>TIẾNG ANH THẦY PHÚ</small><h1>Ngữ pháp<br>Grammar Friends 1</h1><p>Đọc cách dùng, cấu trúc và ví dụ theo từng bài. Dùng bảng tra cứu cuối tài liệu để ôn lại các dạng câu.</p><p class="source">Grammar Friends 1 Student’s Book • Oxford University Press 2009</p></div><div id="lessons"></div></main><div id="stage"><section id="slide"></section></div><nav id="nav"><button id="prev">← Trước</button><span id="count"></span><button id="next">Tiếp →</button></nav><div id="menu"><div id="panel"><button id="close">Đóng ✕</button><h2>Mục lục</h2><input id="search" placeholder="Tìm bài hoặc ngữ pháp" aria-label="Tìm bài"><div id="links"></div></div></div><div id="black"></div><script>
+const DATA={
+  "meta": {
+    "book": "Grammar Friends 1",
+    "title": "Ngữ pháp Grammar Friends 1",
+    "brand": "ADAM ENGLISH",
+    "teacher": "Tiếng Anh Thầy Phú",
+    "level": "",
+    "source_note": "Grammar Friends 1 Student’s Book • Oxford University Press 2009",
+    "filename": "Grammar_Friends_1_Ngu_phap_tieng_Viet"
+  },
+  "units": [
+    {
+      "unit": 1,
+      "label": "Starter",
+      "english": "Hello!",
+      "title": "Chào hỏi và từ để hỏi",
+      "source_page": "4, 6",
+      "sections": [
+        {
+          "title": "What Who How",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "What, who và how là các từ để hỏi. What hỏi về sự vật; who hỏi về người. Khi gặp ai đó, dùng How are you? để hỏi thăm."
+            },
+            {
+              "type": "example",
+              "text": "Hello. What's your name? — My name's Jamie."
+            },
+            {
+              "type": "example",
+              "text": "Who's this? — This is Alison."
+            },
+            {
+              "type": "example",
+              "text": "How are you? — I'm fine, thank you."
+            }
+          ]
+        },
+        {
+          "title": "How old",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "How old dùng để hỏi tuổi."
+            },
+            {
+              "type": "example",
+              "text": "How old are you? — I'm three."
+            },
+            {
+              "type": "example",
+              "text": "How old are you? — I'm five."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "label": "Unit 1",
+      "english": "School things",
+      "title": "Đồ dùng học tập",
+      "source_page": "8",
+      "sections": [
+        {
+          "title": "What's this",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "What's this? dùng để hỏi đây là vật gì. Có thể trả lời bằng It's a ..."
+            },
+            {
+              "type": "example",
+              "text": "What's this? — It's a book."
+            }
+          ]
+        },
+        {
+          "title": "Mạo từ a và an",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "A và an là mạo từ, đứng trước danh từ số ít. Dùng an trước âm nguyên âm; các ví dụ của bài bắt đầu bằng a, e, i, o hoặc u."
+            },
+            {
+              "type": "example",
+              "text": "It's a pencil."
+            },
+            {
+              "type": "example",
+              "text": "It's a book."
+            },
+            {
+              "type": "example",
+              "text": "What's this? — It's a ruler."
+            },
+            {
+              "type": "example",
+              "text": "It's an apple."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "label": "Unit 2",
+      "english": "My toys",
+      "title": "Đồ chơi của em",
+      "source_page": "12, 14",
+      "sections": [
+        {
+          "title": "My và your",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "My và your là tính từ sở hữu, cho biết một vật thuộc về ai."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Đại từ",
+                  "Tính từ sở hữu",
+                  "Ví dụ"
+                ],
+                [
+                  "I",
+                  "my — của tôi",
+                  "my train, my ball, my car"
+                ],
+                [
+                  "you",
+                  "your — của bạn",
+                  "your car, your train, your teddy"
+                ]
+              ]
+            },
+            {
+              "type": "example",
+              "text": "This is my ball. This is your teddy."
+            },
+            {
+              "type": "example",
+              "text": "This is my doll. This is your car."
+            }
+          ]
+        },
+        {
+          "title": "This is và Is this",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Is là một dạng của động từ be. Dùng is để giới thiệu hoặc xác định một người hay một vật."
+            },
+            {
+              "type": "example",
+              "text": "This is Alison. This is my car."
+            },
+            {
+              "type": "text",
+              "text": "Is this ...? là câu hỏi Có/Không. Đưa is lên trước this khi chuyển câu kể thành câu hỏi."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu kể",
+                  "Câu hỏi"
+                ],
+                [
+                  "This is your teddy.",
+                  "Is this your teddy?"
+                ]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Với Is this ...?, có thể trả lời ngắn bằng Yes, it is. hoặc No, it isn’t."
+            },
+            {
+              "type": "example",
+              "text": "Is this your doll? — Yes, it is."
+            },
+            {
+              "type": "example",
+              "text": "Is this your car? — No, it isn't."
+            },
+            {
+              "type": "formula",
+              "text": "isn't = is not"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "label": "Unit 3",
+      "english": "My body",
+      "title": "Cơ thể của em",
+      "source_page": "16, 18–19",
+      "sections": [
+        {
+          "title": "Danh từ số ít và số nhiều",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Danh từ số ít chỉ một người hoặc một vật. Danh từ số nhiều chỉ từ hai người hoặc hai vật trở lên. Với các danh từ có quy tắc trong bài, thêm s vào dạng số ít."
+            },
+            {
+              "type": "formula",
+              "text": "Số nhiều = số ít + s"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Số ít",
+                  "Số nhiều"
+                ],
+                [
+                  "one finger",
+                  "eight fingers"
+                ],
+                [
+                  "one eye",
+                  "two eyes"
+                ],
+                [
+                  "one nose",
+                  "four noses"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Is và are",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Are là một dạng của be. Dùng are để xác định hoặc mô tả từ hai người hay hai vật trở lên."
+            },
+            {
+              "type": "example",
+              "text": "These are eyes. The eyes are blue."
+            },
+            {
+              "type": "example",
+              "text": "The nose is red. The noses are red."
+            },
+            {
+              "type": "example",
+              "text": "These are the faces! Yellow faces!"
+            },
+            {
+              "type": "example",
+              "text": "These are the eyes! Blue eyes!"
+            },
+            {
+              "type": "example",
+              "text": "These are the ears! Green ears!"
+            }
+          ]
+        },
+        {
+          "title": "This và these",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This và these là từ chỉ định, dùng để chỉ người hoặc vật ở gần chúng ta. This dùng với số ít; these dùng với số nhiều."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Một người hoặc vật",
+                  "Từ hai người hoặc vật"
+                ],
+                [
+                  "This is my kite.",
+                  "These are my pencils."
+                ]
+              ]
+            },
+            {
+              "type": "example",
+              "text": "This is my pencil case. These are my pencils."
+            },
+            {
+              "type": "example",
+              "text": "This is my kite. These are my dolls."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "label": "Unit 4",
+      "english": "Jobs",
+      "title": "Nghề nghiệp",
+      "source_page": "22, 24",
+      "sections": [
+        {
+          "title": "He She It",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "He và she là đại từ làm chủ ngữ. He dùng cho con trai hoặc đàn ông; she dùng cho con gái hoặc phụ nữ. Trong bài này, it dùng cho đồ vật. Các đại từ chủ ngữ khác là I, you, we, they."
+            },
+            {
+              "type": "example",
+              "text": "What's Mr Jones? — He's a policeman."
+            },
+            {
+              "type": "example",
+              "text": "What's Mrs Jones? — She's a doctor."
+            }
+          ]
+        },
+        {
+          "title": "Câu hỏi với is",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Is he ...? và Is she ...? là câu hỏi Có/Không. Đưa is lên trước he hoặc she."
+            },
+            {
+              "type": "example",
+              "text": "He's a policeman. → Is he a policeman?"
+            },
+            {
+              "type": "example",
+              "text": "Is he a policeman? — Yes, he is. / No, he isn't."
+            },
+            {
+              "type": "example",
+              "text": "Is she a nurse? — Yes, she is."
+            },
+            {
+              "type": "example",
+              "text": "Is she a vet? — No, she isn't."
+            },
+            {
+              "type": "formula",
+              "text": "he's = he is; No, she isn't. = No, she is not."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "label": "Unit 5",
+      "english": "At the park",
+      "title": "Ở công viên",
+      "source_page": "26–27",
+      "sections": [
+        {
+          "title": "Where's",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Where's ...? dùng để hỏi vị trí của một người hoặc một vật. Hỏi về vật có thể trả lời bằng It's ...; hỏi về người có thể trả lời bằng He's ... hoặc She's ..."
+            },
+            {
+              "type": "example",
+              "text": "Where's the bag? — It's on the swing."
+            },
+            {
+              "type": "formula",
+              "text": "Where's ...? = Where is ...?"
+            }
+          ]
+        },
+        {
+          "title": "In On Under",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "In, on và under là giới từ chỉ nơi chốn. Chúng cho biết người hoặc vật ở đâu."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Giới từ",
+                  "Nghĩa"
+                ],
+                [
+                  "in",
+                  "ở trong"
+                ],
+                [
+                  "on",
+                  "ở trên"
+                ],
+                [
+                  "under",
+                  "ở dưới"
+                ]
+              ]
+            },
+            {
+              "type": "example",
+              "text": "The teddy is in the bag."
+            },
+            {
+              "type": "example",
+              "text": "The bag is on the swing."
+            },
+            {
+              "type": "example",
+              "text": "The kite is under the slide."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "label": "Unit 6",
+      "english": "My family",
+      "title": "Gia đình của em",
+      "source_page": "30, 32–33",
+      "sections": [
+        {
+          "title": "I và you",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "I dùng để nói về bản thân. You dùng để nói với người đang trò chuyện với em."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Số ít",
+                  "Số nhiều"
+                ],
+                [
+                  "I, you, he, she, it",
+                  "we, you, they"
+                ]
+              ]
+            },
+            {
+              "type": "example",
+              "text": "I'm Alison. I'm not Jamie."
+            },
+            {
+              "type": "example",
+              "text": "You're Jamie. You aren't my dad."
+            },
+            {
+              "type": "example",
+              "text": "I'm your dad! You're my brother!"
+            },
+            {
+              "type": "formula",
+              "text": "I'm = I am; you're = you are"
+            }
+          ]
+        },
+        {
+          "title": "Are you",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Are you ...? là câu hỏi Có/Không để hỏi về người. Đưa are lên trước you."
+            },
+            {
+              "type": "example",
+              "text": "You are my brother. → Are you my brother?"
+            },
+            {
+              "type": "example",
+              "text": "Are you my brother? — No, I'm your grandma."
+            },
+            {
+              "type": "example",
+              "text": "Are you my brother? — Yes, I'm your brother."
+            }
+          ]
+        },
+        {
+          "title": "Sở hữu cách s",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Thêm 's sau tên để cho biết người nào có hoặc sở hữu một thứ gì đó. Dấu ' gọi là apostrophe — dấu nháy đơn."
+            },
+            {
+              "type": "example",
+              "text": "I'm Alison's brother."
+            },
+            {
+              "type": "example",
+              "text": "This is Jamie's book."
+            },
+            {
+              "type": "example",
+              "text": "Are you Jamie's mum? — Yes. I'm Alison's mum too!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "label": "Unit 7",
+      "english": "Clothes",
+      "title": "Quần áo",
+      "source_page": "36, 38",
+      "sections": [
+        {
+          "title": "Are they",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Are they ...? là câu hỏi Có/Không về từ hai người hoặc hai vật trở lên. Trả lời ngắn bằng Yes, they are. hoặc No, they aren’t."
+            },
+            {
+              "type": "example",
+              "text": "Are they socks? — Yes, they are."
+            },
+            {
+              "type": "example",
+              "text": "Are they trousers? — No, they aren't."
+            },
+            {
+              "type": "example",
+              "text": "What are these? Are they trousers? — No, they aren't. They're shorts."
+            },
+            {
+              "type": "formula",
+              "text": "No, they aren't. = No, they are not."
+            }
+          ]
+        },
+        {
+          "title": "His và her",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "His và her là tính từ sở hữu, cho biết vật thuộc về ai. His dùng cho nam; her dùng cho nữ."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Đại từ",
+                  "Sở hữu",
+                  "Ví dụ"
+                ],
+                [
+                  "he",
+                  "his — của anh ấy",
+                  "his trousers, his shorts, his T-shirt"
+                ],
+                [
+                  "she",
+                  "her — của cô ấy",
+                  "her dress, her socks, her T-shirt"
+                ]
+              ]
+            },
+            {
+              "type": "example",
+              "text": "Where's his T-shirt? Where's her dress?"
+            },
+            {
+              "type": "text",
+              "text": "Các tính từ sở hữu khác:"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Đại từ",
+                  "Tính từ sở hữu"
+                ],
+                [
+                  "I",
+                  "my"
+                ],
+                [
+                  "you",
+                  "your"
+                ],
+                [
+                  "it",
+                  "its"
+                ],
+                [
+                  "we",
+                  "our"
+                ],
+                [
+                  "they",
+                  "their"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "label": "Unit 8",
+      "english": "My home",
+      "title": "Ngôi nhà của em",
+      "source_page": "40–41, 43",
+      "sections": [
+        {
+          "title": "Where are",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Where are ...? hỏi vị trí của từ hai người hoặc hai vật trở lên. Where’s ...? hỏi vị trí của một người hoặc một vật."
+            },
+            {
+              "type": "example",
+              "text": "Where are Jamie and Dave? — They're in the garden."
+            },
+            {
+              "type": "example",
+              "text": "Where are Grandma and Grandpa? — They're in the living room."
+            },
+            {
+              "type": "formula",
+              "text": "Where's ...? = Where is ...?"
+            }
+          ]
+        },
+        {
+          "title": "Hỏi xem có ở một nơi hay không",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Dùng Is he in ...?, Is she in ...? hoặc Are they in ...? để hỏi người hoặc vật có ở nơi em nghĩ hay không."
+            },
+            {
+              "type": "example",
+              "text": "Where's Alison? Is she in the living room? — Yes, she is."
+            },
+            {
+              "type": "example",
+              "text": "Where's Jamie? Is he in the kitchen?"
+            },
+            {
+              "type": "example",
+              "text": "Where are Jamie and Dave? Are they in the hall?"
+            },
+            {
+              "type": "example",
+              "text": "Where are Jamie and Dave? Are they in the bedroom? — No, they aren't."
+            }
+          ]
+        },
+        {
+          "title": "Upstairs và downstairs",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Upstairs và downstairs là trạng từ chỉ nơi chốn trong nhà. Upstairs nghĩa là ở tầng trên; downstairs nghĩa là ở tầng dưới."
+            },
+            {
+              "type": "example",
+              "text": "Where's Jamie? — He's upstairs."
+            },
+            {
+              "type": "example",
+              "text": "Where are Alison and Mum? — They're downstairs."
+            },
+            {
+              "type": "example",
+              "text": "Where's the bathroom? — It's upstairs."
+            },
+            {
+              "type": "example",
+              "text": "Where are the kitchen and the dining room? — They're downstairs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "label": "Unit 9",
+      "english": "My lunch",
+      "title": "Bữa trưa của em",
+      "source_page": "44, 46",
+      "sections": [
+        {
+          "title": "I've got và I haven't got",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "I've got cho biết em có hoặc sở hữu một thứ gì đó. I haven't got cho biết em không có thứ đó."
+            },
+            {
+              "type": "example",
+              "text": "I've got a sandwich. It's my sandwich."
+            },
+            {
+              "type": "example",
+              "text": "I've got a banana. I've got two sandwiches."
+            },
+            {
+              "type": "example",
+              "text": "I haven't got a banana."
+            },
+            {
+              "type": "formula",
+              "text": "I've got = I have got; I haven't got = I have not got"
+            }
+          ]
+        },
+        {
+          "title": "Have you got",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Have you got ...? là câu hỏi Có/Không về những thứ một người có. Trả lời ngắn bằng Yes, I have. hoặc No, I haven’t."
+            },
+            {
+              "type": "example",
+              "text": "Have you got your lunch box? Have you got your books? Have you got your pencil case? — Yes, I have."
+            },
+            {
+              "type": "example",
+              "text": "Have you got your shoes? — No, I haven't!"
+            },
+            {
+              "type": "formula",
+              "text": "No, I haven't. = No, I have not."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "label": "Unit 10",
+      "english": "My friends",
+      "title": "Bạn bè của em",
+      "source_page": "50",
+      "sections": [
+        {
+          "title": "He's got She's got It's got",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "He’s got, she’s got và it’s got cho biết một người hoặc vật có hay sở hữu thứ gì đó. Các cấu trúc này cũng dùng để mô tả đặc điểm bên ngoài."
+            },
+            {
+              "type": "example",
+              "text": "She's got a doll. It's her doll."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định",
+                  "Phủ định"
+                ],
+                [
+                  "He's got short hair.",
+                  "He hasn’t got long hair."
+                ],
+                [
+                  "It's got four sides.",
+                  "It hasn’t got four sides."
+                ]
+              ]
+            },
+            {
+              "type": "formula",
+              "text": "…'s got = has got; … hasn't got = has not got"
+            }
+          ]
+        },
+        {
+          "title": "Ví dụ miêu tả",
+          "blocks": [
+            {
+              "type": "example",
+              "text": "This is Jamie. He's got short hair. He's got brown eyes."
+            },
+            {
+              "type": "example",
+              "text": "This is Jamie's friend. Her name's Angie. She hasn't got short hair. She's got long hair. She's got green eyes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "label": "Unit 11",
+      "english": "Zoo trip",
+      "title": "Đi thăm sở thú",
+      "source_page": "54, 56",
+      "sections": [
+        {
+          "title": "I like và I don’t like",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "I like và I don’t like là dạng hiện tại đơn của động từ like. Trong bài này, hiện tại đơn diễn tả những điều đúng ở hiện tại."
+            },
+            {
+              "type": "example",
+              "text": "I like monkeys."
+            },
+            {
+              "type": "example",
+              "text": "I don't like snakes."
+            },
+            {
+              "type": "formula",
+              "text": "I like ... = Tôi thích ...; I don't like ... = Tôi không thích ..."
+            },
+            {
+              "type": "formula",
+              "text": "don't = do not"
+            }
+          ]
+        },
+        {
+          "title": "Tính từ",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Green và tall là tính từ. Tính từ miêu tả người hoặc vật. Tính từ giữ nguyên dạng khi nói về một hay nhiều người hoặc vật."
+            },
+            {
+              "type": "example",
+              "text": "It's green. They're tall."
+            },
+            {
+              "type": "example",
+              "text": "It's big. They're big."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "label": "Unit 12",
+      "english": "Family meal",
+      "title": "Bữa ăn gia đình",
+      "source_page": "58, 60",
+      "sections": [
+        {
+          "title": "Do you like",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Do you like ...? là câu hỏi Có/Không ở thì hiện tại đơn. Trả lời ngắn bằng Yes, I do. hoặc No, I don’t."
+            },
+            {
+              "type": "example",
+              "text": "Do you like fish? — No, I don't."
+            },
+            {
+              "type": "example",
+              "text": "Do you like carrots? — No, I don't."
+            },
+            {
+              "type": "example",
+              "text": "Do you like meat? — Yes, I do."
+            },
+            {
+              "type": "example",
+              "text": "Do you like apples? — Yes, I do."
+            },
+            {
+              "type": "example",
+              "text": "Do you like bananas? — No, I don't."
+            }
+          ]
+        },
+        {
+          "title": "What do you like",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "What do you like? là câu hỏi với từ để hỏi, nghĩa là “Em thích gì?”. Có thể trả lời bằng I like ... hoặc nói điều không thích bằng I don’t like ..."
+            },
+            {
+              "type": "example",
+              "text": "What do you like? — I like yogurt."
+            },
+            {
+              "type": "example",
+              "text": "I don't like fish."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "label": "Unit 13",
+      "english": "My room",
+      "title": "Căn phòng của em",
+      "source_page": "64, 66–67",
+      "sections": [
+        {
+          "title": "There’s và there are",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Dùng there’s và there are để nói có người hoặc vật ở xung quanh. There’s dùng với một người hoặc một vật. There are dùng với từ hai người hoặc hai vật trở lên."
+            },
+            {
+              "type": "example",
+              "text": "There's a bed. There's a cupboard."
+            },
+            {
+              "type": "example",
+              "text": "There are four rooms."
+            },
+            {
+              "type": "formula",
+              "text": "there's = there is"
+            }
+          ]
+        },
+        {
+          "title": "Is there",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Is there ...? là câu hỏi Có/Không về sự hiện diện của một vật. Đưa is lên trước there."
+            },
+            {
+              "type": "example",
+              "text": "There's a pillow on the bed. → Is there a pillow on the bed?"
+            },
+            {
+              "type": "text",
+              "text": "Trả lời ngắn bằng Yes, there is. hoặc No, there isn’t."
+            },
+            {
+              "type": "example",
+              "text": "Is there a ball? — Yes, there is. / No, there isn't."
+            },
+            {
+              "type": "example",
+              "text": "Is there a car? — Yes, there is."
+            },
+            {
+              "type": "example",
+              "text": "Is there a train? — No, there isn't."
+            },
+            {
+              "type": "formula",
+              "text": "No, there isn't. = No, there is not."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "label": "Unit 14",
+      "english": "Abilities",
+      "title": "Khả năng",
+      "source_page": "68, 70",
+      "sections": [
+        {
+          "title": "Can và can’t",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Can diễn tả có khả năng làm việc gì. Can đứng trước một động từ khác. Can’t diễn tả không có khả năng làm việc gì."
+            },
+            {
+              "type": "example",
+              "text": "A bird can fly. It can fly."
+            },
+            {
+              "type": "example",
+              "text": "Alison can run. She can run."
+            },
+            {
+              "type": "example",
+              "text": "A snake can't run. It can't run."
+            },
+            {
+              "type": "example",
+              "text": "Jamie can't fly. He can't fly."
+            },
+            {
+              "type": "example",
+              "text": "I can run! A snake can't run. A bird can fly. I can't fly."
+            },
+            {
+              "type": "formula",
+              "text": "can't = cannot"
+            }
+          ]
+        },
+        {
+          "title": "Can it Can he Can she",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Can it ...? hỏi về khả năng của con vật hoặc vật. Trả lời ngắn bằng Yes, it can. hoặc No, it can’t. Dùng Can he ...? và Can she ...? để hỏi về khả năng của người."
+            },
+            {
+              "type": "example",
+              "text": "Can it run? — Yes, it can. / No, it can't."
+            },
+            {
+              "type": "example",
+              "text": "Can it fly? — Yes, it can. / No, it can't."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 16,
+      "label": "Unit 15",
+      "english": "At the beach",
+      "title": "Ở bãi biển",
+      "source_page": "72, 74–75",
+      "sections": [
+        {
+          "title": "Let’s",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Dùng Let’s để rủ hoặc đề nghị ai đó cùng làm việc gì. Let’s đứng trước một động từ khác."
+            },
+            {
+              "type": "formula",
+              "text": "let's = let us"
+            },
+            {
+              "type": "example",
+              "text": "Let's play football. — That's a good idea."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Let’s với một hành động",
+                  "Let’s với một cụm hành động"
+                ],
+                [
+                  "Let's walk.",
+                  "Let's play football."
+                ],
+                [
+                  "Let's run.",
+                  "Let's find shells."
+                ],
+                [
+                  "Let's climb.",
+                  "Let's swim in the sea."
+                ],
+                [
+                  "Let's talk.",
+                  "Let's go in a boat."
+                ],
+                [
+                  "Let's sing.",
+                  "Let's write."
+                ],
+                [
+                  "Let's draw.",
+                  "Let's make a sandcastle."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Câu mệnh lệnh",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Jump và run là dạng mệnh lệnh. Dùng câu mệnh lệnh để bảo ai đó làm việc gì. Dấu ! là dấu chấm than, thường đặt cuối câu mệnh lệnh."
+            },
+            {
+              "type": "example",
+              "text": "Jump! Run!"
+            }
+          ]
+        },
+        {
+          "title": "Mệnh lệnh phủ định",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Dùng mệnh lệnh phủ định để bảo ai đó đừng làm việc gì. Dùng don’t trước động từ."
+            },
+            {
+              "type": "example",
+              "text": "Don't forget your hat, Alison."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Mệnh lệnh",
+                  "Mệnh lệnh phủ định"
+                ],
+                [
+                  "Forget.",
+                  "Don't forget."
+                ],
+                [
+                  "Run.",
+                  "Don't run."
+                ],
+                [
+                  "Look.",
+                  "Don't look."
+                ]
+              ]
+            },
+            {
+              "type": "formula",
+              "text": "don't = do not"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 17,
+      "label": "Tra cứu",
+      "english": "Grammar reference",
+      "title": "Bảng tra cứu ngữ pháp",
+      "source_page": "78–80",
+      "sections": [
+        {
+          "title": "Đại từ và tính từ sở hữu",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Đại từ chủ ngữ",
+                  "Tính từ sở hữu"
+                ],
+                [
+                  "I",
+                  "my"
+                ],
+                [
+                  "you",
+                  "your"
+                ],
+                [
+                  "he",
+                  "his"
+                ],
+                [
+                  "she",
+                  "her"
+                ],
+                [
+                  "it",
+                  "its"
+                ],
+                [
+                  "we",
+                  "our"
+                ],
+                [
+                  "they",
+                  "their"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Be Khẳng định và phủ định",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định ngắn",
+                  "Khẳng định đầy đủ",
+                  "Phủ định ngắn",
+                  "Phủ định đầy đủ"
+                ],
+                [
+                  "I'm",
+                  "I am",
+                  "I'm not",
+                  "I am not"
+                ],
+                [
+                  "you're",
+                  "you are",
+                  "you aren't",
+                  "you are not"
+                ],
+                [
+                  "he's",
+                  "he is",
+                  "he isn't",
+                  "he is not"
+                ],
+                [
+                  "she's",
+                  "she is",
+                  "she isn't",
+                  "she is not"
+                ],
+                [
+                  "it's",
+                  "it is",
+                  "it isn't",
+                  "it is not"
+                ],
+                [
+                  "we're",
+                  "we are",
+                  "we aren't",
+                  "we are not"
+                ],
+                [
+                  "you're",
+                  "you are",
+                  "you aren't",
+                  "you are not"
+                ],
+                [
+                  "they're",
+                  "they are",
+                  "they aren't",
+                  "they are not"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Be Câu hỏi và trả lời ngắn",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu hỏi",
+                  "Có",
+                  "Không"
+                ],
+                [
+                  "am I?",
+                  "Yes, I am.",
+                  "No, I'm not."
+                ],
+                [
+                  "are you?",
+                  "Yes, you are.",
+                  "No, you aren't."
+                ],
+                [
+                  "is he?",
+                  "Yes, he is.",
+                  "No, he isn't."
+                ],
+                [
+                  "is she?",
+                  "Yes, she is.",
+                  "No, she isn't."
+                ],
+                [
+                  "is it?",
+                  "Yes, it is.",
+                  "No, it isn't."
+                ],
+                [
+                  "are we?",
+                  "Yes, we are.",
+                  "No, we aren't."
+                ],
+                [
+                  "are you?",
+                  "Yes, you are.",
+                  "No, you aren't."
+                ],
+                [
+                  "are they?",
+                  "Yes, they are.",
+                  "No, they aren't."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Have got Khẳng định và phủ định",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định ngắn",
+                  "Khẳng định đầy đủ",
+                  "Phủ định ngắn",
+                  "Phủ định đầy đủ"
+                ],
+                [
+                  "I've got",
+                  "I have got",
+                  "I haven't got",
+                  "I have not got"
+                ],
+                [
+                  "you've got",
+                  "you have got",
+                  "you haven't got",
+                  "you have not got"
+                ],
+                [
+                  "he's got",
+                  "he has got",
+                  "he hasn't got",
+                  "he has not got"
+                ],
+                [
+                  "she's got",
+                  "she has got",
+                  "she hasn't got",
+                  "she has not got"
+                ],
+                [
+                  "it's got",
+                  "it has got",
+                  "it hasn't got",
+                  "it has not got"
+                ],
+                [
+                  "we've got",
+                  "we have got",
+                  "we haven't got",
+                  "we have not got"
+                ],
+                [
+                  "you've got",
+                  "you have got",
+                  "you haven't got",
+                  "you have not got"
+                ],
+                [
+                  "they've got",
+                  "they have got",
+                  "they haven't got",
+                  "they have not got"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Have got Câu hỏi và trả lời ngắn",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu hỏi",
+                  "Có",
+                  "Không"
+                ],
+                [
+                  "have I got?",
+                  "Yes, I have.",
+                  "No, I haven't."
+                ],
+                [
+                  "have you got?",
+                  "Yes, you have.",
+                  "No, you haven't."
+                ],
+                [
+                  "has he got?",
+                  "Yes, he has.",
+                  "No, he hasn't."
+                ],
+                [
+                  "has she got?",
+                  "Yes, she has.",
+                  "No, she hasn't."
+                ],
+                [
+                  "has it got?",
+                  "Yes, it has.",
+                  "No, it hasn't."
+                ],
+                [
+                  "have we got?",
+                  "Yes, we have.",
+                  "No, we haven't."
+                ],
+                [
+                  "have you got?",
+                  "Yes, you have.",
+                  "No, you haven't."
+                ],
+                [
+                  "have they got?",
+                  "Yes, they have.",
+                  "No, they haven't."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Like Khẳng định và phủ định",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định",
+                  "Phủ định ngắn",
+                  "Phủ định đầy đủ"
+                ],
+                [
+                  "I like",
+                  "I don't like",
+                  "I do not like"
+                ],
+                [
+                  "you like",
+                  "you don't like",
+                  "you do not like"
+                ],
+                [
+                  "he likes",
+                  "he doesn't like",
+                  "he does not like"
+                ],
+                [
+                  "she likes",
+                  "she doesn't like",
+                  "she does not like"
+                ],
+                [
+                  "it likes",
+                  "it doesn't like",
+                  "it does not like"
+                ],
+                [
+                  "we like",
+                  "we don't like",
+                  "we do not like"
+                ],
+                [
+                  "you like",
+                  "you don't like",
+                  "you do not like"
+                ],
+                [
+                  "they like",
+                  "they don't like",
+                  "they do not like"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Like Câu hỏi và trả lời ngắn",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu hỏi",
+                  "Có",
+                  "Không"
+                ],
+                [
+                  "do I like?",
+                  "Yes, I do.",
+                  "No, I don't."
+                ],
+                [
+                  "do you like?",
+                  "Yes, you do.",
+                  "No, you don't."
+                ],
+                [
+                  "does he like?",
+                  "Yes, he does.",
+                  "No, he doesn't."
+                ],
+                [
+                  "does she like?",
+                  "Yes, she does.",
+                  "No, she doesn't."
+                ],
+                [
+                  "does it like?",
+                  "Yes, it does.",
+                  "No, it doesn't."
+                ],
+                [
+                  "do we like?",
+                  "Yes, we do.",
+                  "No, we don't."
+                ],
+                [
+                  "do you like?",
+                  "Yes, you do.",
+                  "No, you don't."
+                ],
+                [
+                  "do they like?",
+                  "Yes, they do.",
+                  "No, they don't."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "There is và there are",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định ngắn",
+                  "Khẳng định đầy đủ",
+                  "Phủ định ngắn",
+                  "Phủ định đầy đủ"
+                ],
+                [
+                  "there's",
+                  "there is",
+                  "there isn't",
+                  "there is not"
+                ],
+                [
+                  "—",
+                  "there are",
+                  "there aren't",
+                  "there are not"
+                ]
+              ]
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu hỏi",
+                  "Có",
+                  "Không"
+                ],
+                [
+                  "is there?",
+                  "Yes, there is.",
+                  "No, there isn't."
+                ],
+                [
+                  "are there?",
+                  "Yes, there are.",
+                  "No, there aren't."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Can Khẳng định và phủ định",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định",
+                  "Phủ định ngắn",
+                  "Phủ định đầy đủ"
+                ],
+                [
+                  "I can",
+                  "I can't",
+                  "I cannot"
+                ],
+                [
+                  "you can",
+                  "you can't",
+                  "you cannot"
+                ],
+                [
+                  "he can",
+                  "he can't",
+                  "he cannot"
+                ],
+                [
+                  "she can",
+                  "she can't",
+                  "she cannot"
+                ],
+                [
+                  "it can",
+                  "it can't",
+                  "it cannot"
+                ],
+                [
+                  "we can",
+                  "we can't",
+                  "we cannot"
+                ],
+                [
+                  "you can",
+                  "you can't",
+                  "you cannot"
+                ],
+                [
+                  "they can",
+                  "they can't",
+                  "they cannot"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Can Câu hỏi và trả lời ngắn",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Câu hỏi",
+                  "Có",
+                  "Không"
+                ],
+                [
+                  "can I?",
+                  "Yes, I can.",
+                  "No, I can't."
+                ],
+                [
+                  "can you?",
+                  "Yes, you can.",
+                  "No, you can't."
+                ],
+                [
+                  "can he?",
+                  "Yes, he can.",
+                  "No, he can't."
+                ],
+                [
+                  "can she?",
+                  "Yes, she can.",
+                  "No, she can't."
+                ],
+                [
+                  "can it?",
+                  "Yes, it can.",
+                  "No, it can't."
+                ],
+                [
+                  "can we?",
+                  "Yes, we can.",
+                  "No, we can't."
+                ],
+                [
+                  "can you?",
+                  "Yes, you can.",
+                  "No, you can't."
+                ],
+                [
+                  "can they?",
+                  "Yes, they can.",
+                  "No, they can't."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Các dạng mệnh lệnh",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Khẳng định",
+                  "Phủ định"
+                ],
+                [
+                  "catch",
+                  "don't catch"
+                ],
+                [
+                  "find",
+                  "don't find"
+                ],
+                [
+                  "fly",
+                  "don't fly"
+                ],
+                [
+                  "forget",
+                  "don't forget"
+                ],
+                [
+                  "have",
+                  "don't have"
+                ],
+                [
+                  "jump",
+                  "don't jump"
+                ],
+                [
+                  "look",
+                  "don't look"
+                ],
+                [
+                  "play",
+                  "don't play"
+                ],
+                [
+                  "run",
+                  "don't run"
+                ],
+                [
+                  "stand up",
+                  "don't stand up"
+                ],
+                [
+                  "swim",
+                  "don't swim"
+                ],
+                [
+                  "wait",
+                  "don't wait"
+                ],
+                [
+                  "walk",
+                  "don't walk"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};const $=s=>document.querySelector(s);const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const storage={get(k,d){try{return JSON.parse(localStorage.getItem('gf1-'+k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem('gf1-'+k,JSON.stringify(v))}catch(e){}}};
+function block(b){if(b.type==='table')return '<div class="tablewrap"><table>'+b.rows.map((r,i)=>'<tr>'+r.map(c=>`<${i?'td':'th'}>${esc(c)}</${i?'td':'th'}>`).join('')+'</tr>').join('')+'</table></div>';return `<p class="${b.type}">${esc(b.text)}</p>`}
+let sections=[],slides=[],index=0,active=storage.get('section',0),size=storage.get('font',20),isSlide=false;
+DATA.units.forEach((u,ui)=>{let a=document.createElement('article');a.innerHTML=`<div class="kicker">${esc(u.label)} • ${esc(u.english)}</div><h2>${esc(u.title)}</h2><p class="source">Grammar Friends 1 • Trang ${esc(u.source_page)}</p>`;u.sections.forEach(s=>{let n=sections.length;sections.push({u,s,ui,n});let el=document.createElement('section');el.id='s'+n;el.style.scrollMarginTop='145px';el.innerHTML=`<h3>${esc(s.title)}</h3>`+s.blocks.map(block).join('');a.append(el)});$('#lessons').append(a);let opt=document.createElement('option');opt.value=ui;opt.textContent=`${u.label} · ${u.title}`;$('#pick').append(opt)});
+function head(x){return `<div class="kicker">${esc(x.u.label)} • ${esc(x.u.english)}</div><h2>${esc(x.s.title)}</h2><div id="slideContent"></div><div class="source">ADAM ENGLISH · Tiếng Anh Thầy Phú · Trang nguồn ${esc(x.u.source_page)}</div>`}
+function paginate(){const stage=$('#stage');stage.style.display='flex';stage.style.visibility='hidden';const el=$('#slide');for(const x of sections){let parts=[];for(const b of x.s.blocks){if(b.type==='table'){for(let r=1;r<b.rows.length;r+=4)parts.push({...b,rows:[b.rows[0],...b.rows.slice(r,r+4)]})}else parts.push(b)}el.innerHTML=head(x);let limit=970-$('#slideContent').offsetTop;let group=[];for(const b of parts){$('#slideContent').innerHTML=[...group,b].map(block).join('');if($('#slideContent').scrollHeight>limit&&group.length){slides.push({x,blocks:group});group=[b]}else group.push(b);$('#slideContent').innerHTML=group.map(block).join('')}if(group.length)slides.push({x,blocks:group})}stage.style.display='';stage.style.visibility='';show(0)}
+function fit(){let h=$('#toolbar').getBoundingClientRect().height;$('#stage').style.top=h+'px';let z=Math.min(innerWidth/1920,(innerHeight-h-70)/1080);$('#slide').style.transform=`scale(${Math.max(.05,z)})`}
+function show(i){index=Math.max(0,Math.min(slides.length-1,i));let p=slides[index];if(!p)return;active=p.x.n;$('#slide').innerHTML=head(p.x);$('#slideContent').innerHTML=p.blocks.map(block).join('');$('#count').textContent=`${index+1} / ${slides.length}`;$('#pick').value=p.x.ui;storage.set('section',active);fit()}
+function go(n){active=n;storage.set('section',n);if(isSlide)show(slides.findIndex(p=>p.x.n===n));else document.getElementById('s'+n).scrollIntoView({block:'start'});$('#pick').value=sections[n].ui;$('#menu').classList.remove('open')}
+function toggle(){if(!isSlide)remember();isSlide=!isSlide;document.body.classList.toggle('slides',isSlide);$('#mode').textContent=isSlide?'Chế độ Đọc':'Chế độ Slide';if(isSlide)go(active);else requestAnimationFrame(()=>go(active));fit()}
+function remember(){if(isSlide)return;let n=0;for(const s of sections){if(document.getElementById('s'+s.n).getBoundingClientRect().top<innerHeight*.45)n=s.n}active=n;storage.set('section',n);storage.set('scroll',scrollY);$('#pick').value=sections[n].ui}
+function links(q=''){const list=$('#links');list.innerHTML='';for(const x of sections){if((x.u.label+' '+x.u.title+' '+x.s.title).toLowerCase().includes(q.toLowerCase())){let b=document.createElement('button');b.textContent=x.u.label+' · '+x.s.title;b.onclick=()=>go(x.n);list.append(b)}}}
+$('#mode').onclick=toggle;$('#pick').onchange=()=>go(sections.find(s=>s.ui===+$('#pick').value).n);$('#toc').onclick=()=>$('#menu').classList.add('open');$('#close').onclick=()=>$('#menu').classList.remove('open');$('#menu').onclick=e=>{if(e.target===$('#menu'))$('#menu').classList.remove('open')};$('#search').oninput=e=>links(e.target.value);
+function font(d){size=Math.max(16,Math.min(30,size+d));document.documentElement.style.setProperty('--font',size+'px');storage.set('font',size)}$('#plus').onclick=()=>font(2);$('#minus').onclick=()=>font(-2);function full(){if(document.fullscreenElement)document.exitFullscreen?.();else document.documentElement.requestFullscreen?.()}$('#full').onclick=full;$('#theme').onclick=()=>document.body.classList.toggle('dark');$('#prev').onclick=()=>show(index-1);$('#next').onclick=()=>show(index+1);
+addEventListener('keydown',e=>{if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(e.key==='Escape'){$('#menu').classList.remove('open');$('#black').style.display='none'}if(e.key.toLowerCase()==='m')$('#menu').classList.toggle('open');if(e.key.toLowerCase()==='f')full();if(e.key.toLowerCase()==='t')document.body.classList.toggle('dark');if(e.key.toLowerCase()==='b')$('#black').style.display=$('#black').style.display==='block'?'none':'block';if(isSlide){if(['ArrowRight','ArrowDown',' '].includes(e.key)){e.preventDefault();show(index+1)}if(['ArrowLeft','ArrowUp'].includes(e.key)){e.preventDefault();show(index-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)}});$('#black').onclick=()=>$('#black').style.display='none';let tx=0;$('#stage').addEventListener('touchstart',e=>tx=e.changedTouches[0].clientX,{passive:true});$('#stage').addEventListener('touchend',e=>{let dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(index+(dx<0?1:-1))},{passive:true});addEventListener('resize',fit);let pending=false;addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(()=>{remember();pending=false})}},{passive:true});font(0);links();let saved=active;paginate();active=Math.min(saved,sections.length-1);if(matchMedia('(max-width: 700px)').matches){requestAnimationFrame(()=>scrollTo(0,storage.get('scroll',0)))}else{isSlide=true;document.body.classList.add('slides');$('#mode').textContent='Chế độ Đọc';go(active)}fit();
+</script></html>
